@@ -1,1 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
+@import "node_modules/bootstrap/dist/css/bootstrap.min.css";
+
+@media (min-width: 768px)
+{
+  .dropdown .dropdown-menu{
+      display: block;
+      opacity: 0;
+      -webkit-transition: all 200ms ease-in;
+      -moz-transition: all 200ms ease-in;
+      -ms-transition: all 200ms ease-in;
+      -o-transition: all 200ms ease-in;
+      transition: all 200ms ease-in;
+  }
+  .dropdown:hover .dropdown-menu {
+      display: block;
+      opacity: 1;
+  }
+}
